@@ -10,7 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
   let total = a + b;
-  let text = 'The sum of ' + a + ' and ' + b + ' is ' + total + '.';
+  let text = ('The sum of ' + a + ' and ' + b + ' is ' + total + '.');
   return [total, text];
 }
 
@@ -29,11 +29,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  let mult = a * b;
+  let productStatement = 'The product of ' + a + ' and ' + b + ' is ' + mult + '.'
+  return [mult, productStatement];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
